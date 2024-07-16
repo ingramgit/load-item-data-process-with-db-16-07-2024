@@ -47,6 +47,21 @@ public class ContextUtility implements java.io.Serializable {
 	    }
 	}
 	
+	public static void initializeCronMetadata(ProcessContext context, JSONArray jsonArray, int number)  {
+		
+		if (jsonArray == null || jsonArray.size() == 0) {
+			return;
+		}
+		
+	    Iterator<JSONObject> i = jsonArray.iterator();
+ 
+	    // take each value from the json array separately
+	    while (i.hasNext()) {
+	        JSONObject jsonObject = i.next();
+	        updateVariable(context, jsonObject);
+	    }
+	}
+	
     private static void updateVariable(ProcessContext context, JSONObject jsonObject)  {
     	
     	if(jsonObject == null) {
@@ -69,4 +84,6 @@ public class ContextUtility implements java.io.Serializable {
 		}
     	
     }
+    
+    
 }
