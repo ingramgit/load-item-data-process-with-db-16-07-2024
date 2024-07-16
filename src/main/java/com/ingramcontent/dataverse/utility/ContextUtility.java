@@ -106,7 +106,7 @@ public class ContextUtility implements java.io.Serializable {
     	if(jsonObject == null) {
     		return;
     	}
-    	static final String PIPELINE_CODE_INDEX = Constant.PIPELINE_CODE_+index;
+    	final String PIPELINE_CODE_INDEX = Constant.PIPELINE_CODE_+index;
     	
     	String key = (String)jsonObject.get(Constant.PARAMETER_NAME);
     	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
