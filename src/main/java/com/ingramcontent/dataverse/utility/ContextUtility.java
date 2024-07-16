@@ -135,6 +135,7 @@ public class ContextUtility implements java.io.Serializable {
 			break;
 			case Constant.THRESHOLD:
 			    Map<String, Integer> mapping = new ObjectMapper().readValue(value, HashMap.class);
+			    threshold.setThreshold(mapping);
 				setProcessVariable(context, Constant.THRESHOLD, threshold);
 			break;
 			default:
