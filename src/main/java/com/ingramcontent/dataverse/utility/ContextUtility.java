@@ -9,6 +9,7 @@ import org.json.simple.JSONObject;
 import org.kie.api.runtime.process.ProcessContext;
 import org.kie.api.runtime.process.WorkflowProcessInstance;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import com.ingramcontent.dataverse.model.Producer;
 import com.ingramcontent.dataverse.model.PipelineThreshold;
