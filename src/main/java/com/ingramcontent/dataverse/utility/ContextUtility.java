@@ -39,7 +39,7 @@ public class ContextUtility implements java.io.Serializable {
 		return context.getProcessInstance().getId();
 	}
 
-    public static void initializeMetadata(ProcessContext context, JSONArray jsonArray) throws JsonProcessingException  {
+    public static void initializeMetadata(ProcessContext context, JSONArray jsonArray)   {
 		
 		if (jsonArray == null || jsonArray.size() == 0) {
 			return;
@@ -54,7 +54,7 @@ public class ContextUtility implements java.io.Serializable {
 	    }
 	}
 	
-	public static void initializeCronMetadata(ProcessContext context, JSONArray jsonArray, int index)  {
+	public static void initializeCronMetadata(ProcessContext context, JSONArray jsonArray, int index) throws JsonProcessingException  {
 		
 		if (jsonArray == null || jsonArray.size() == 0) {
 			return;
