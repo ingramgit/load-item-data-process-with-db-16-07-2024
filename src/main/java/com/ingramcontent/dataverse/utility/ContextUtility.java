@@ -145,6 +145,8 @@ public class ContextUtility implements java.io.Serializable {
 			  }
 			  
 			  if (Constant.DATAFILTER_+index == key) {
+			      Map<String, Integer> mapping = new ObjectMapper().readValue(value, HashMap.class);
+			      threshold.setThreshold(mapping);
 				  setProcessVariable(context, Constant.DATA_FILTER, filter);
 			  }
 		}
