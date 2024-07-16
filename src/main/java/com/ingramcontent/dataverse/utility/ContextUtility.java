@@ -1,6 +1,8 @@
 package com.ingramcontent.dataverse.utility;
 
 import java.util.Iterator;
+import java.util.Map;
+import java.util.HashMap;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
