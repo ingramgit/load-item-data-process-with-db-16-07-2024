@@ -118,19 +118,24 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.END, value);
 			break;
 			case Constant.SIGNAL_NAME:
-				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			    producer.setSignalName(value);
+				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.TASK_NAME:
-				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			    producer.setTaskName(value);
+				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.REQUEST_TYPE:
-				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			    producer.setRequestType(value);
+				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.CONTAINER_ID:
-				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			    producer.setSignalName(value);
+				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.PIPELINE_CODE_+index:
-				setProcessVariable(context, Constant.CONSUMER_URL, value);
+				producer.setSignalName(value);
+				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.DATAFILTER_+index:
 				setProcessVariable(context, Constant.CONSUMER_URL, value);
