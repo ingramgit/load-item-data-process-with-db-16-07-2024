@@ -144,6 +144,10 @@ public class ContextUtility implements java.io.Serializable {
 			      producer.setPipelineCode(value);
 				  setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
+			  
+			  if (Constant.PIPELINE_CODE_+index == key) {
+			      
+			  }
 		}
     	
     }
