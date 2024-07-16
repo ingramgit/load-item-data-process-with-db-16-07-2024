@@ -148,7 +148,7 @@ public class ContextUtility implements java.io.Serializable {
 			      producer.setPipelineCode(value);
 				  setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
-			  
+			  System.out.println("Constant.DATAFILTER_+index = " + Constant.DATAFILTER_+index);
 			  if (key != null && key.equalsIgnoreCase(Constant.DATAFILTER_+index)) {
 			      Map<String, String> input = new ObjectMapper().readValue(value, HashMap.class);
 			      filter.setInput(input);
