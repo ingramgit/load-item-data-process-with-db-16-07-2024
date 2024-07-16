@@ -134,7 +134,7 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.PIPELINE_CODE_+index:
-				producer.setSignalName(value);
+				producer.setPipelineCode(value);
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.DATAFILTER_+index:
