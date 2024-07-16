@@ -32,6 +32,12 @@ public class Constant implements java.io.Serializable {
     public static final String PARAMETER_NAME = "parameterName";
     public static final String PARAMETER_VALUE = "parameterValue";
     
+    public static final String EXECUTE = "execute";
+    public static final String END = "end";  
+    public static final String SIGNAL_NAME = "signalName"; 
+    public static final String TASK_NAME = "taskName"; 
+    public static final String REQUEST_TYPE = "requestType"; 
+    
     public static String PROD = "PROD";
     public static String XFRM = "XFRM";
     public static String CNSM = "CNSM";
