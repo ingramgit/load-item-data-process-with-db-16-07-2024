@@ -102,7 +102,7 @@ public class ContextUtility implements java.io.Serializable {
                                        PipelineThreshold threshold,
                                        Producer producer,
                                        DataFilter filter,
-                                       int index)  {
+                                       int index)throws JsonProcessingException  {
     	
     	if(jsonObject == null) {
     		return;
