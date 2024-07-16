@@ -68,7 +68,7 @@ public class ContextUtility implements java.io.Serializable {
 	    // take each value from the json array separately
 	    while (i.hasNext()) {
 	        JSONObject jsonObject = i.next();
-	        updateVariable(context, jsonObject);
+	        updateVariable(context, jsonObject, threshold, producer, filter, index);
 	    }
 	}
 	
@@ -106,7 +106,8 @@ public class ContextUtility implements java.io.Serializable {
     	if(jsonObject == null) {
     		return;
     	}
-    	    public static final String EXECUTE = "execute";
+    	
+    public static final String EXECUTE = "execute";
     public static final String END = "end";  
     public static final String SIGNAL_NAME = "signalName"; 
     public static final String TASK_NAME = "taskName"; 
@@ -127,6 +128,24 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.END, value);
 			break;
 			case Constant.SIGNAL_NAME:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.TASK_NAME:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.REQUEST_TYPE:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.CONTAINER_ID:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.THRESHOLD:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.PIPELINE_CODE_+index:
+				setProcessVariable(context, Constant.CONSUMER_URL, value);
+			break;
+			case Constant.DATAFILTER_+index:
 				setProcessVariable(context, Constant.CONSUMER_URL, value);
 			break;
 		}
