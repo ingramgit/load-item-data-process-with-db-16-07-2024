@@ -62,6 +62,7 @@ public class ContextUtility implements java.io.Serializable {
 		PipelineThreshold threshold = new PipelineThreshold();
         Producer producer = new Producer();
         DataFilter filter = new DataFilter();
+        
 	    Iterator<JSONObject> i = jsonArray.iterator();
  
 	    // take each value from the json array separately
