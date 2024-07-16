@@ -106,10 +106,11 @@ public class ContextUtility implements java.io.Serializable {
     	if(jsonObject == null) {
     		return;
     	}
+    	static final String PIPELINE_CODE_INDEX = Constant.PIPELINE_CODE_+index;
     	
     	String key = (String)jsonObject.get(Constant.PARAMETER_NAME);
     	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
-    	String pipelineCode = Constant.PIPELINE_CODE_+index;
+    	
     	
     	switch (key) {
 			case Constant.EXECUTE:
@@ -134,7 +135,7 @@ public class ContextUtility implements java.io.Serializable {
 			    producer.setContainerId(value);
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
-			case pipelineCode:
+			case PIPELINE_CODE_INDEX:
 				producer.setPipelineCode(value);
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
