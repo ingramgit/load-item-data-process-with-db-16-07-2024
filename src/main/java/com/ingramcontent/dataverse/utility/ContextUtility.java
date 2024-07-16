@@ -138,10 +138,10 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.DATAFILTER_+index:
-				setProcessVariable(context, Constant.DATA_FILTER, filter);
+				//setProcessVariable(context, Constant.DATA_FILTER, filter);
 			break;
 			case Constant.THRESHOLD:
-				setProcessVariable(context, Constant.THRESHOLD, threshold);
+				//setProcessVariable(context, Constant.THRESHOLD, threshold);
 			break;
 		}
     	
