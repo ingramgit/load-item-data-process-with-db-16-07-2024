@@ -143,7 +143,7 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.THRESHOLD, threshold);
 			break;
 			default:
-			  if (Constant.PIPELINE_CODE_+index == key) {
+			  if (key != null && key.equalsIgnoreCase(Constant.PIPELINE_CODE_+index)) {
 			      producer.setPipelineCode(value);
 				  setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
