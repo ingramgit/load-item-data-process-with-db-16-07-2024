@@ -107,16 +107,6 @@ public class ContextUtility implements java.io.Serializable {
     		return;
     	}
     	
-    public static final String EXECUTE = "execute";
-    public static final String END = "end";  
-    public static final String SIGNAL_NAME = "signalName"; 
-    public static final String TASK_NAME = "taskName"; 
-    public static final String REQUEST_TYPE = "requestType"; 
-    public static final String CONTAINER_ID = "containerId";
-    public static final String THRESHOLD = "threshold";
-    public static final String PIPELINE_CODE_ = "pipelineCode_";
-    public static final String DATAFILTER_ = "dataFilter_";
-    	
     	String key = (String)jsonObject.get(Constant.PARAMETER_NAME);
     	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
     	
