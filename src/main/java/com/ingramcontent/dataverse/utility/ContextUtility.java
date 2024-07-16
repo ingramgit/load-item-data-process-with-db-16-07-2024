@@ -39,7 +39,7 @@ public class ContextUtility implements java.io.Serializable {
 		return context.getProcessInstance().getId();
 	}
 
-    public static void initializeMetadata(ProcessContext context, JSONArray jsonArray)  {
+    public static void initializeMetadata(ProcessContext context, JSONArray jsonArray) throws JsonProcessingException  {
 		
 		if (jsonArray == null || jsonArray.size() == 0) {
 			return;
