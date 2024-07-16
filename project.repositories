@@ -11,14 +11,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>kie-workbench</id>
         <url>${env.KIE_MAVEN_REPO}</url>
         <source>SETTINGS</source>
@@ -30,6 +22,14 @@
         <id>jboss-public-repository-group</id>
         <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
   </repositories>
