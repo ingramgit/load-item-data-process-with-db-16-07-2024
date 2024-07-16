@@ -53,7 +53,7 @@ public class ContextUtility implements java.io.Serializable {
 	    }
 	}
 	
-	public static void initializeCronMetadata(ProcessContext context, JSONArray jsonArray, int number)  {
+	public static void initializeCronMetadata(ProcessContext context, JSONArray jsonArray, int index)  {
 		
 		if (jsonArray == null || jsonArray.size() == 0) {
 			return;
