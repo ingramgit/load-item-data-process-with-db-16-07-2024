@@ -139,12 +139,14 @@ public class ContextUtility implements java.io.Serializable {
 			break;
 			case Constant.THRESHOLD:
 			    Map<String, Integer> thresholdMap = new ObjectMapper().readValue(value, HashMap.class);
+			    System.out.println("thresholdMap === " + thresholdMap);
 			    threshold.setThreshold(thresholdMap);
 				setProcessVariable(context, Constant.THRESHOLD, threshold);
 			break;
 			default:
 			   System.out.println("Constant.PIPELINE_CODE_+index = " + Constant.PIPELINE_CODE_+index);
 			  if (key != null && key.equalsIgnoreCase(Constant.PIPELINE_CODE_+index)) {
+			      
 			      producer.setPipelineCode(value);
 				  setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
