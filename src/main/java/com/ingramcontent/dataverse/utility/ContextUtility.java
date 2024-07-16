@@ -64,7 +64,7 @@ public class ContextUtility implements java.io.Serializable {
 		PipelineThreshold threshold = new PipelineThreshold();
 		//threshold.
         Producer producer = new Producer();
-        producer.setCreatedDate("");
+        producer.setCreatedDate(java.time.LocalDateTime.now().toString());
         DataFilter filter = new DataFilter();
         
 	    Iterator<JSONObject> i = jsonArray.iterator();
